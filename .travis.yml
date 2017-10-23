@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "node"
 before_script:
-  - npm install -g mocha
+  - npm install mocha should
 cache:
   directories:
     - "node_modules"
