@@ -1,0 +1,19 @@
+{
+  "name": "@startx/travis-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha ./lib/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/AVAILOTECH/travis-test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "should": "^13.1.2"
+  }
+}
