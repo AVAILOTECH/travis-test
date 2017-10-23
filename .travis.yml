@@ -1,11 +1,9 @@
 language: node_js
 node_js:
   - "node"
-before_script:
-  - npm install mocha should
 cache:
   directories:
     - "node_modules"
 env:
   - NODE_ENV=
-  - NODE_ENV=production
+  - NODE_ENV=release
