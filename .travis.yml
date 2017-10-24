@@ -7,3 +7,23 @@ cache:
 env:
   - NODE_ENV=
   - NODE_ENV=release
+deploy:
+  provider: bluemixcloudfoundry
+  skip_cleanup: true
+  manifest: manifest.yml
+  username: $BLUEMIX_USER
+  password: $BLUEMIX_PASSWORD
+  organization: $BLUEMIX_ORGANIZATION
+  space: base-staging
+  on:
+    branch: staging
+deploy:
+  provider: bluemixcloudfoundry
+  skip_cleanup: true
+  manifest: manifest.yml
+  username: $BLUEMIX_USER
+  password: $BLUEMIX_PASSWORD
+  organization: $BLUEMIX_ORGANIZATION
+  space: base-production
+  on:
+    branch: master
