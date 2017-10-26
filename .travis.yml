@@ -8,22 +8,21 @@ env:
   - NODE_ENV=
   - NODE_ENV=release
 deploy:
-  edge: true
-  provider: bluemixcloudfoundry
-  username: $BLUEMIX_USER
-  password: $BLUEMIX_PASSWORD
-  organization: $BLUEMIX_ORGANIZATION
-  space: base-staging
-  region: eu-gb
-  on:
-    branch: staging
-deploy:
-  edge: true
-  provider: bluemixcloudfoundry
-  username: $BLUEMIX_USER
-  password: $BLUEMIX_PASSWORD
-  organization: $BLUEMIX_ORGANIZATION
-  space: base-production
-  region: eu-gb
-  on:
-    branch: master
+  - provider: bluemixcloudfoundry
+    edge: true
+    username: $BLUEMIX_USER
+    password: $BLUEMIX_PASSWORD
+    organization: $BLUEMIX_ORGANIZATION
+    space: base-staging
+    region: eu-gb
+    on:
+      branch: staging
+  - provider: bluemixcloudfoundry
+    edge: true
+    username: $BLUEMIX_USER
+    password: $BLUEMIX_PASSWORD
+    organization: $BLUEMIX_ORGANIZATION
+    space: base-production
+    region: eu-gb
+    on:
+      branch: master
