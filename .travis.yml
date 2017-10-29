@@ -9,7 +9,6 @@ env:
   - NODE_ENV=release
 deploy:
   - provider: bluemixcloudfoundry
-    edge: true
     username: $BLUEMIX_USER
     password: $BLUEMIX_PASSWORD
     organization: $BLUEMIX_ORGANIZATION
@@ -18,7 +17,6 @@ deploy:
     on:
       branch: staging
   - provider: bluemixcloudfoundry
-    edge: true
     username: $BLUEMIX_USER
     password: $BLUEMIX_PASSWORD
     organization: $BLUEMIX_ORGANIZATION
